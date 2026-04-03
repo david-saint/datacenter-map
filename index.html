@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontier AI Data Centers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Loading overlay -->
+  <div id="loading-overlay">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <p class="loading-text">Initializing global infrastructure view&hellip;</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-title">
+      <h1>Frontier AI Data Centers</h1>
+      <p class="header-subtitle">Source: Epoch AI &mdash; <span id="facility-count">0</span> facilities tracked</p>
+    </div>
+  </header>
+
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Detail panel -->
+  <aside id="detail-panel" class="panel-closed">
+    <button id="panel-close" aria-label="Close panel">&times;</button>
+    <div id="panel-content"></div>
+  </aside>
+
+  <!-- Legend -->
+  <div id="legend">
+    <div class="legend-header">
+      <h3>Legend</h3>
+      <button id="legend-toggle" aria-label="Toggle legend">&#9660;</button>
+    </div>
+    <div id="legend-body"></div>
+  </div>
+
+  <!-- Attribution -->
+  <div id="epoch-attribution">
+    Data: <a href="https://epoch.ai/" target="_blank" rel="noopener">Epoch AI</a> (CC-BY)
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
